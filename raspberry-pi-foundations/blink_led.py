@@ -1,6 +1,6 @@
 #Simple blink led sketch using GIPO pin on RaspberryPi
 
-from gipozero import LED
+from gpiozero import LED
 from time import sleep
 
 led = LED(17)
@@ -10,3 +10,7 @@ while True:
     sleep(1)
     led.off()
     sleep(1)
+    led.on()
+    sleep(0.5)
+    led.off()
+    sleep(0.9)
